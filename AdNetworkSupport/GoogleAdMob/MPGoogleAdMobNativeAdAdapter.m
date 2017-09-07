@@ -41,8 +41,8 @@ static NSString *const kGADMStoreKey = @"store";
       properties[kAdMainImageKey] = mainImage.imageURL.absoluteString;
     }
 
-    if (adMobNativeContentAd.logo.image) {
-      properties[kAdIconImageKey] = adMobNativeContentAd.logo.image;
+    if (adMobNativeContentAd.logo.imageURL.absoluteString) {
+      properties[kAdIconImageKey] = adMobNativeContentAd.logo.imageURL.absoluteString;
     }
 
     if (adMobNativeContentAd.advertiser) {
